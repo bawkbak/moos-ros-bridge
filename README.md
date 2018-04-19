@@ -21,6 +21,9 @@ Fourth terminal, see the data from ros to moos </br>
 $ uXMS CounterFromROS </br> 
 Fifth terminal, see the data from moos to ros </br>
 $ rostopic echo /CounterFromMOOS </br> 
+Sixth terminal, send the msg <br>
+$ uPokeDB CounterFromMOOS=23
+
 
 
 
