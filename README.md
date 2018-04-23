@@ -10,6 +10,9 @@ $ cd moos-ros-bridge/catkin_ws/src/
 $ git clone https://github.com/tonycar12002/moos-ros-bridge.git 
 $ cd ../
 $ caktin_make
+$ source /opt/ros/kinetic/setup.bash
+$ source ~/moos-ros-bridge/catkin_ws/devel/setup.bash
+$ export PATH=$HOME/moos-ivp/bin:$PATH
 ```
 First terminal </br>
 $ roscore </br>
