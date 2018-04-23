@@ -1,7 +1,7 @@
 <launch>
 
   <node pkg="moosros" type="Bridge" name="Bridge" 
-        args="$(find moosros)/counters.xml $(find moosros)/bridge.moos" 
+        args="$(find moosros)/moos/example/counters.xml $(find moosros)/moos/example/bridge.moos" 
         respawn="false" output="screen" />
 
   <node pkg="moosros_tester" type="counter" name="counter" respawn="false" 
