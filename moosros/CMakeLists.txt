@@ -46,5 +46,6 @@ add_executable( Bridge
   )
 
 target_link_libraries(Bridge ${catkin_LIBRARIES})
-target_link_libraries(Bridge MOOS)
+target_link_libraries(Bridge ${MOOS_LIBRARIES})
 target_link_libraries(Bridge ${Boost_LIBRARIES})
+
