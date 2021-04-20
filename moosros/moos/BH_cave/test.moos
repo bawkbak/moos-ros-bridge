@@ -17,28 +17,14 @@ Processconfig = ANTLER
    
   Run = MOOSDB           @ NewConsole = false
   Run = MOOS_ROS_BRIDGE  @ NewConsole = false
-  Run = uXMS              @ NewConsole = false 
-  Run = pLOGger          @ NewConsole = false
+  Run = pLogger          @ NewConsole = false
 }
 
 
-ProcessConfig = MOOS_ROS_BRIDGE
-{
-  AppTick    = 1
-  CommsTick  = 20
-}
-
-ProcessConfig = uXMS
-{
-  AppTick    = 4
-  CommsTick  = 4
-  VAR            = husky1/robot_pose/header/seq,husky1/robot_pose/header/stamp/sec 
-}
-
-ProcessConfig = pLOGger
+ProcessConfig = pLogger
 {
 
-  
+  File       = robot_pose_data
   AsyncLOG   = true
   WildCardLOGging = true
   WildCardOmitPattern = *_STATUS
